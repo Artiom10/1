@@ -14,6 +14,7 @@
 		84F5B2111AC5CBDF004A0245 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F5B2101AC5CBDF004A0245 /* Images.xcassets */; };
 		84F5B2141AC5CBDF004A0245 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F5B2121AC5CBDF004A0245 /* LaunchScreen.xib */; };
 		84F5B2201AC5CBDF004A0245 /* _Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F5B21F1AC5CBDF004A0245 /* _Tests.m */; };
+		84F5B22B1AC5DB96004A0245 /* LOIphoneFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F5B22A1AC5DB96004A0245 /* LOIphoneFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		84F5B2191AC5CBDF004A0245 /* 1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F5B21E1AC5CBDF004A0245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84F5B21F1AC5CBDF004A0245 /* _Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _Tests.m; sourceTree = "<group>"; };
+		84F5B2291AC5DB96004A0245 /* LOIphoneFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOIphoneFactory.h; sourceTree = "<group>"; };
+		84F5B22A1AC5DB96004A0245 /* LOIphoneFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOIphoneFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 		84F5B1F71AC5CBDF004A0245 = {
 			isa = PBXGroup;
 			children = (
+				84F5B22C1AC5DBA6004A0245 /* Factory */,
 				84F5B2021AC5CBDF004A0245 /* 1 */,
 				84F5B21C1AC5CBDF004A0245 /* 1Tests */,
 				84F5B2011AC5CBDF004A0245 /* Products */,
@@ -117,6 +121,15 @@
 				84F5B21E1AC5CBDF004A0245 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84F5B22C1AC5DBA6004A0245 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				84F5B2291AC5DB96004A0245 /* LOIphoneFactory.h */,
+				84F5B22A1AC5DB96004A0245 /* LOIphoneFactory.m */,
+			);
+			name = Factory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +234,7 @@
 			files = (
 				84F5B20C1AC5CBDF004A0245 /* ViewController.m in Sources */,
 				84F5B2091AC5CBDF004A0245 /* AppDelegate.m in Sources */,
+				84F5B22B1AC5DB96004A0245 /* LOIphoneFactory.m in Sources */,
 				84F5B2061AC5CBDF004A0245 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

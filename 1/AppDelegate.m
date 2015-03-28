@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LOIphoneFactory.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+   
+    LOIphoneFactory * factory = [[LOIphoneFactory alloc]init];
+    [factory start_Factory];
+    
     return YES;
 }
 
